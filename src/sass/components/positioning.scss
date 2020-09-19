@@ -1,0 +1,56 @@
+$xsm: $spacing-1;
+$sm: $spacing-2;
+$md: $spacing-3;
+$lg: $spacing-4;
+$xlg: $spacing-5;
+$xxlg: $spacing-6;
+
+@include distances("m","margin","xsm",$xsm);
+@include distances("m","margin","sm",$sm);
+@include distances("m","margin","md",$md);
+@include distances("m","margin","lg",$lg);
+@include distances("m","margin","xlg",$xlg);
+@include distances("m","margin","xxlg",$xxlg);
+
+@include distances("p","padding","xsm",$xsm);
+@include distances("p","padding","sm",$sm);
+@include distances("p","padding","md",$md);
+@include distances("p","padding","lg",$lg);
+@include distances("p","padding","xlg",$xlg);
+@include distances("p","padding","xxlg",$xxlg);
+
+// FULL WIDTH
+.-ui-full-width {
+  width: 100% !important;
+  max-width: none !important;
+  box-sizing: border-box;
+  display: block;
+}
+
+// FLOATS
+.-ui-fl {
+  float: left !important;
+}
+
+.-ui-fr {
+  float: right !important;
+}
+
+// VERTICAL ALIGN
+.-ui-valign {
+  display: flex;
+  align-items: center;
+}
+
+// HORIZONTAL ALIGN
+.-ui-halign {
+  display: flex;
+  justify-content: center;
+}
+
+//CENTER
+.-ui-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

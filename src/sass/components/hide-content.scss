@@ -1,0 +1,21 @@
+.-ui-hide {
+  display: none !important;
+}
+
+@include breakpoint("small", "exact") {
+  .-ui-hide-small, .-ui-hide-medium-down {
+    display: none !important;
+  }
+}
+
+@include breakpoint("medium", "exact") {
+  .-ui-hide-medium, .-ui-hide-medium-up, .-ui-hide-medium-down {
+    display: none !important;
+  }
+}
+
+@include breakpoint("large", "up") {
+  .-ui-hide-large, .-ui-hide-medium-up {
+    display: none !important;
+  }
+}

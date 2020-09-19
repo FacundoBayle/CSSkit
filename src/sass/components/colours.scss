@@ -1,0 +1,6 @@
+@import "../globals/colours";
+
+@each $name, $value in $colours-classList {
+  .-ui-bc-#{$name} { background-color: $value !important; }
+  .-ui-tc-#{$name} { color: $value !important; }
+}

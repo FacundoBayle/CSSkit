@@ -1,0 +1,28 @@
+$container-max_width: 1280px;
+$container-max_width-sm: 844px;
+$container-max_width-md: 1062px;
+
+.ui-container {
+  box-sizing: content-box;
+  max-width: $container-max_width;
+  margin: 0 auto;
+  padding: 0 $spacing-6;
+
+  &.-fluid {
+    max-width: none;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  &.-sm {
+    max-width: $container-max_width-sm;
+  }
+
+  &.-md {
+    max-width: $container-max_width-md;
+  }
+
+  @include breakpoint("small", "exact") {
+    padding: 0 $spacing-4;
+  }
+}

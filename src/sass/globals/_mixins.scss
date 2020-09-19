@@ -1,0 +1,122 @@
+// Grids
+@mixin responsive-grid($size, $min) {
+  $columns: 12;
+  $cell-size: 100%/$columns;
+
+  @media (min-width: $min) {
+    @for $i from 1 through $columns {
+      .-#{$size}-#{$i} {
+        width: $cell-size * $i;
+      }
+    }
+  }
+}
+
+// Cleafix
+@mixin clearfix {
+  &:after, &:before {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+// Breakpoint
+@mixin breakpoint($size, $exact: "exact") {
+  @if $size == "small" {
+    @if $exact == "exact" {
+      @media (min-width:1px) and (max-width:767px) {
+        @content;
+      }
+    }@if $exact == "up" {
+    @media (min-width:1px) {
+      @content;
+    }
+  }
+  }
+
+  @else if $size == "medium" {
+    @if $exact == "exact" {
+      @media (min-width:768px) and (max-width:1023px) {
+        @content;
+      }
+    }@if $exact == "up" {
+    @media (min-width:768px) {
+      @content;
+    }
+  }@if $exact == "down" {
+    @media (max-width:1023px) {
+      @content;
+    }
+  }
+  }
+
+  @else if $size == "large" {
+    @if $exact {
+      @media (min-width:1024px) and (max-width:1279px) {
+        @content;
+      }
+    }@if $exact == "up" {
+    @media (min-width:1024px) {
+      @content;
+    }
+  }@if $exact == "down" {
+    @media (max-width:1279px) {
+      @content;
+    }
+  }
+  }
+
+  @else if $size == "huge" {
+    @media (min-width:1280px) {
+      @content;
+    }
+  }
+}
+
+// Opacity
+@mixin opacity($opacity:50, $filter: true) {
+  opacity: $opacity / 100;
+  @if $filter {
+    filter: alpha(opacity=$opacity);
+  }
+}
+
+// Keyframes
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @-ms-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+// Positioning (Margins and Paddings)
+@mixin distances($key,$style,$sizeName,$size) {
+  .-ui-#{$key}t-#{$sizeName} {
+    #{$style}-top: $size !important;
+  }
+
+  .-ui-#{$key}b-#{$sizeName} {
+    #{$style}-bottom: $size !important;
+  }
+
+  .-ui-#{$key}l-#{$sizeName} {
+    #{$style}-left: $size !important;
+  }
+
+  .-ui-#{$key}r-#{$sizeName} {
+    #{$style}-right: $size !important;
+  }
+
+  .-ui-#{$key}-#{$sizeName} {
+    #{$style}: $size !important;
+  }
+}

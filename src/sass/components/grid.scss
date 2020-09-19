@@ -1,0 +1,63 @@
+.ui-row {
+	margin: 0 -12.5px;
+
+	@include clearfix;
+	@include responsive-grid("sm", 1px); // responsive small grid
+	@include responsive-grid("md", 768px); // responsive medium grid
+	@include responsive-grid("lg", 1024px); // responsive large grid
+
+	.col {
+		display: block;
+		float: left;
+		box-sizing: border-box;
+		min-height: 1px;
+		padding: 0 $spacing-3;
+	}
+
+	&.-no-gutter {
+		margin-right: 0;
+		margin-left: 0;
+
+		> .col {
+			padding: 0;
+		}
+	}
+}
+@include breakpoint("small", "exact") {
+	.ui-row .col {
+		padding: 0 $spacing-2;
+	}
+
+	.ui-row {
+		margin: 0 $spacing-n2;
+
+		&.-no-gutter-sm {
+			margin-right: 0;
+			margin-left: 0;
+
+			> .col {
+				padding: 0;
+			}
+		}
+	}
+}
+@include breakpoint("medium", "exact") {
+	.ui-row.-no-gutter-md {
+		margin-right: 0;
+		margin-left: 0;
+
+		> .col {
+			padding: 0;
+		}
+	}
+}
+@include breakpoint("large", "up") {
+	.ui-row.-no-gutter-lg {
+		margin-right: 0;
+		margin-left: 0;
+
+		> .col {
+			padding: 0;
+		}
+	}
+}

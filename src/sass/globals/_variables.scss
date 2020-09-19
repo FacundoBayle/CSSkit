@@ -1,0 +1,41 @@
+// Unitless base spacing
+$base-spacing: 4px;
+
+// Positive spacing
+$spacing-1: ($base-spacing * 1);
+$spacing-2: ($base-spacing * 2);
+$spacing-3: ($base-spacing * 3);
+$spacing-4: ($base-spacing * 4);
+$spacing-5: ($base-spacing * 5);
+$spacing-6: ($base-spacing * 6);
+$spacing-7: ($base-spacing * 7);
+$spacing-8: ($base-spacing * 8);
+$spacing-9: ($base-spacing * 9);
+$spacing-10: ($base-spacing * 10);
+$spacing-12: ($base-spacing * 12);
+$spacing-15: ($base-spacing * 15);
+$spacing-18: ($base-spacing * 18);
+
+// Negative spacing
+$spacing-n1: ($base-spacing * -1);
+$spacing-n2: ($base-spacing * -2);
+$spacing-n3: ($base-spacing * -3);
+$spacing-n4: ($base-spacing * -4);
+$spacing-n5: ($base-spacing * -5);
+$spacing-n6: ($base-spacing * -6);
+$spacing-n7: ($base-spacing * -7);
+$spacing-n8: ($base-spacing * -8);
+$spacing-n9: ($base-spacing * -9);
+$spacing-n10: ($base-spacing * -10);
+$spacing-n12: ($base-spacing * -12);
+$spacing-n15: ($base-spacing * -15);
+$spacing-n18: ($base-spacing * -18);
+
+// Border radius
+$border-radius-1: 2px;
+$border-radius-2: 4px;
+$border-radius-3: 6px;
+$border-radius-4: 8px;
+$border-radius-5: 10px;
+$border-radius-6: 12px;
+$border-radius-half: 50%;
