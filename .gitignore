@@ -3,3 +3,4 @@
 node_modules
 documentation.txt
 release.sh
+RELEASE_TEMPLATE.md

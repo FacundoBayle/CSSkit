@@ -43,7 +43,7 @@ CSSkit folder structure:
 
    - /resources/
         - /sprites/
-        - /icons/
+        - /fonts/
    - css-kit.min.css (components styles)
    
 ## Changelog
