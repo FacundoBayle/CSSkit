@@ -1,5 +1,20 @@
 # Changelog
 
+## v0.3.0 (November 02, 2020)
+
+### New
+
+- Dropdowns
+- Add new button variant:
+    - loading
+    
+### Update
+- Add flags tests.
+
+### Fix
+
+- Fix flags file url.
+
 ## v0.2.0 (October 09, 2020)
 
 ### New
