@@ -1,0 +1,25 @@
+@import "../globals/mixins";
+
+@include keyframes(button-loading) {
+  0% {
+    width: 0;
+    border-radius: 0 0 0 $border-radius-2;
+    opacity: 0.1;
+  }
+
+  32% {
+    border-radius: 0 0 0 $border-radius-2;
+  }
+
+  40% {
+    width: 100%;
+    border-radius: 0 0 $border-radius-2 $border-radius-2;
+    opacity: 0.7;
+  }
+
+  100% {
+    width: 100%;
+    border-radius: 0 0 $border-radius-2 $border-radius-2;
+    opacity: 0;
+  }
+}

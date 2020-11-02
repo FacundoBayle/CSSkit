@@ -1,8 +1,13 @@
+// Globals
 @import "src/sass/globals/variables";
 @import "src/sass/globals/colours";
 @import "src/sass/globals/resets";
 @import "src/sass/globals/mixins";
 
+// Animations
+@import "src/sass/animations/button-loading";
+
+// Components
 @import "src/sass/components/grid";
 @import "src/sass/components/flags";
 @import "src/sass/components/buttons";
@@ -12,3 +17,4 @@
 @import "src/sass/components/colours";
 @import "src/sass/components/text";
 @import "src/sass/components/icons";
+@import "src/sass/components/dropdown";

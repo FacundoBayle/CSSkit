@@ -34,11 +34,28 @@ $button-opacity:                 45 !default;
   vertical-align: middle;
   cursor: pointer;
   border-radius: 4px;
-  transition: 0.3s;
+  transition: background-color 0.3s ease-out;
 
   .btn-text {
     vertical-align: top;
+    display: inline-block;
   }
+
+  .btn-status {
+    display: block;
+  }
+
+  &:after {
+    content: "";
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 4px;
+    transform-origin: 0 0;
+  }
+
 
   //Icons
   .btn-icon {
@@ -126,6 +143,28 @@ $button-opacity:                 45 !default;
 
     .btn-icon {
       padding: 0;
+    }
+  }
+
+  &.-loading {
+    position: relative;
+    background-color: $button-disabled-background;
+    color: $button-disabled;
+    transform: translate3d(0,0,0);
+    pointer-events: none;
+
+    &:after {
+      display: block;
+      background-color: $button-primary;
+      animation: button-loading 1.4s infinite;
+    }
+
+    .btn-icon {
+      display: none;
+    }
+
+    .btn-text {
+      display: none;
     }
   }
 

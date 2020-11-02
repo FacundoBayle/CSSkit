@@ -43,6 +43,38 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+@-webkit-keyframes button-loading {
+  0% {
+    width: 0;
+    border-radius: 0 0 0 4px;
+    opacity: 0.1; }
+  32% {
+    border-radius: 0 0 0 4px; }
+  40% {
+    width: 100%;
+    border-radius: 0 0 4px 4px;
+    opacity: 0.7; }
+  100% {
+    width: 100%;
+    border-radius: 0 0 4px 4px;
+    opacity: 0; } }
+
+@keyframes button-loading {
+  0% {
+    width: 0;
+    border-radius: 0 0 0 4px;
+    opacity: 0.1; }
+  32% {
+    border-radius: 0 0 0 4px; }
+  40% {
+    width: 100%;
+    border-radius: 0 0 4px 4px;
+    opacity: 0.7; }
+  100% {
+    width: 100%;
+    border-radius: 0 0 4px 4px;
+    opacity: 0; } }
+
 .ui-row {
   margin: 0 -12.5px; }
   .ui-row:after, .ui-row:before {
@@ -173,7 +205,7 @@ table {
 /* ff-sphere = spherical with specular highlight */
 /* ff-wave = waving flag look */
 .ui-flag {
-  background-image: url("./src/resources/sprites/flags.png");
+  background-image: url("../../resources/sprites/flags.png");
   background-repeat: no-repeat;
   background-size: 100% 49494%;
   display: inline-block;
@@ -194,7 +226,7 @@ table {
   .ui-flag.-lg {
     width: 42px;
     height: 27px; }
-  .ui-flag.-xl {
+  .ui-flag.-xlg {
     width: 60px;
     height: 37px; }
   .ui-flag.-AR {
@@ -861,9 +893,21 @@ table {
   vertical-align: middle;
   cursor: pointer;
   border-radius: 4px;
-  transition: 0.3s; }
+  transition: background-color 0.3s ease-out; }
   .ui-btn .btn-text {
-    vertical-align: top; }
+    vertical-align: top;
+    display: inline-block; }
+  .ui-btn .btn-status {
+    display: block; }
+  .ui-btn:after {
+    content: "";
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 4px;
+    transform-origin: 0 0; }
   .ui-btn .btn-icon + .btn-text {
     padding-left: 5px; }
   .ui-btn.-normal {
@@ -906,6 +950,21 @@ table {
     padding: 0 !important; }
     .ui-btn.-circle .btn-icon {
       padding: 0; }
+  .ui-btn.-loading {
+    position: relative;
+    background-color: #cccccc;
+    color: #666666;
+    transform: translate3d(0, 0, 0);
+    pointer-events: none; }
+    .ui-btn.-loading:after {
+      display: block;
+      background-color: #3BAFDA;
+      -webkit-animation: button-loading 1.4s infinite;
+      animation: button-loading 1.4s infinite; }
+    .ui-btn.-loading .btn-icon {
+      display: none; }
+    .ui-btn.-loading .btn-text {
+      display: none; }
   .ui-btn.-lg {
     height: 48px;
     padding: 0 20px;
@@ -1459,3 +1518,21 @@ table {
 
 .ui-icon-arrow-left:before {
   content: "\e91c"; }
+
+.ui-dropdown .ui-dropdown-list {
+  background-color: #434a54;
+  padding: 5px 0;
+  text-align: left;
+  border: none;
+  margin: 2px 0 0;
+  border-radius: 4px; }
+  .ui-dropdown .ui-dropdown-list .ui-dropdown-item {
+    padding: 8px 20px; }
+    .ui-dropdown .ui-dropdown-list .ui-dropdown-item .ui-dropdown-link {
+      text-decoration: none;
+      color: white; }
+  .ui-dropdown .ui-dropdown-list .ui-dropdown-divider {
+    height: 1px;
+    margin: 9px 0;
+    overflow: hidden;
+    background-color: #656D78; }

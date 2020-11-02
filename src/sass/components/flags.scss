@@ -1,5 +1,5 @@
 //------ VARIABLES ------//
-$flags_sprite : "./src/resources/sprites/flags.png";
+$flags_sprite : "../../resources/sprites/flags.png";
 
 /* ff-round = circular icons */
 /* ff-app = app icon look */
@@ -39,7 +39,7 @@ $flags_sprite : "./src/resources/sprites/flags.png";
         height: 27px;
     }
 
-    &.-xl {
+    &.-xlg {
         width: 60px;
         height: 37px;
     }
