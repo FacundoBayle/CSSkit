@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.4.0 (December 11, 2020)
+
+### New
+
+- Modals
+- Alerts
+- Search
+
 ## v0.3.0 (November 02, 2020)
 
 ### New
