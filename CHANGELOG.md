@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.4.1 (December 11, 2020)
+
+### Fix
+
+- Fix resources url path in minified file
+
 ## v0.4.0 (December 11, 2020)
 
 ### New
