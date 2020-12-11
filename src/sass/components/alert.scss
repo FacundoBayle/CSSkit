@@ -1,0 +1,39 @@
+.ui-alert {
+  position: relative;
+  margin-bottom: 20px;
+  padding: 15px 30px 15px 15px;
+  background: #f8f8f8;
+  color: #666;
+
+  p {
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+  .ui-alert-close {
+    position: absolute;
+    cursor: pointer;
+    top: 15px;
+    right: 15px;
+  }
+
+  &.-success {
+    background: #edfbf6;
+    color: #32d296;
+  }
+
+  &.-danger {
+    background: #fef4f6;
+    color: #f0506e;
+  }
+
+  &.-warning {
+    background: #fff6ee;
+    color: #faa05a;
+  }
+
+  &.-info {
+    background: #d8eafc;
+    color: #1e87f0;
+  }
+}

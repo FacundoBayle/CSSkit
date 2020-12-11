@@ -1,0 +1,57 @@
+.ui-search {
+  width: 180px;
+  position: relative;
+
+  .ui-search-input {
+    height: 40px;
+    padding-left: 6px;
+    padding-right: 6px;
+    background: transparent;
+    border: 1px solid #e5e5e5;
+    box-sizing: border-box;
+    margin: 0;
+    border-radius: 0;
+    font: inherit;
+    overflow: visible;
+    width: 100%;
+    -webkit-appearance: none;
+    vertical-align: middle;
+    color: #666;
+    outline: none;
+  }
+
+  .ui-search-button {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 10px;
+    display: inline-flex;
+    justify-content: right;
+    align-items: center;
+    color: #999;
+    text-decoration: none;
+    font-size: 20px;
+    padding-left: 10px;
+    border-left: 1px solid #e5e5e5;
+  }
+
+  &.-left {
+    .ui-search-button {
+      right: unset;
+      left: 0;
+      padding-right: 10px;
+      border-right: 1px solid #e5e5e5;
+    }
+
+    .ui-search-input{
+      padding-left: 45px;
+    }
+  }
+}
+
+
+// later send to input component
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
