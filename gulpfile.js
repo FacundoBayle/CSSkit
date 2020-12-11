@@ -4,6 +4,7 @@ const rename = require("gulp-rename");
 const autoprefixer = require('gulp-autoprefixer');
 const clean = require('gulp-rimraf');
 const browserSync = require('browser-sync').create();
+const urlAdjuster = require('gulp-css-replace-url');
 
 // COMPILE DEV SCSS FILES
 gulp.task('sass', function () {
@@ -36,6 +37,10 @@ gulp.task('css-prod', function () {
         .pipe(autoprefixer({
             cascade: false
         }))
+        .pipe(urlAdjuster({
+            replace:  ['../../resources','resources'],
+        }))
+        .pipe(sass({outputStyle: 'compressed'}))
         .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest('./dist'));
 });
