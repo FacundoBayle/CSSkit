@@ -1,5 +1,6 @@
 // Globals
 @import "src/sass/globals/variables";
+@import "src/sass/globals/typography";
 @import "src/sass/globals/colours";
 @import "src/sass/globals/resets";
 @import "src/sass/globals/mixins";
@@ -21,3 +22,5 @@
 @import "src/sass/components/alert";
 @import "src/sass/components/search";
 @import "src/sass/components/modal";
+@import "src/sass/components/heading";
+@import "src/sass/components/form";

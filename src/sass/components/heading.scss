@@ -1,0 +1,66 @@
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  margin: 0 0 20px 0;
+  line-height: 1.2;
+}
+
+h1, .ui-h1 {
+ font-size: 38px;
+}
+
+h2, .ui-h2 {
+  font-size: 30px;
+}
+
+h3, .ui-h3 {
+  font-size: 26px;
+}
+
+h4, .ui-h4 {
+  font-size: 24px;
+}
+
+h5, .ui-h5 {
+  font-size: 22px;
+}
+
+h6, .ui-h6 {
+  font-size: 20px;
+}
+
+.ui-heading-line {
+  overflow: hidden;
+
+ * {
+   position: relative;
+   display: inline-block;
+ }
+}
+
+.ui-heading-line>::before {
+  right: 100%;
+  margin-right: calc(5px + 0.3em);
+}
+
+.ui-heading-line>::after {
+  left: 100%;
+  margin-left: calc(5px + 0.3em);
+}
+
+.ui-heading-line>::before, .ui-heading-line>::after {
+  content: "";
+  position: absolute;
+  top: calc(50% - (calc(0.2px + 0.05em) / 2));
+  width: 2000px;
+  border-bottom: calc(0.2px + 0.05em) solid #e5e5e5;
+}
+
+.ui-heading-bullet {
+  border-left: 5px solid #e5e5e5;
+  padding-left: 5px;
+}
+
+.ui-heading-divider {
+  padding-bottom: 10px;
+  border-bottom: 2.5px solid #e5e5e5;
+}

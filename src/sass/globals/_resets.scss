@@ -14,7 +14,6 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-family: inherit;
 	font-size: 100%;
 	font-weight: inherit;
 	font-style: inherit;
@@ -25,8 +24,8 @@ time, mark, audio, video {
 
 body {
 	color: $darkgray;
-	font-family: "Rubik", Arial, sans-serif;
-	font-size: 14px;
+	font-family: 'Lato', 'Open Sans', 'Roboto', sans-serif;
+	font-size: 16px;
 	line-height: 1;
 }
 

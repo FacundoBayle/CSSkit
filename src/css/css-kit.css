@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&family=Roboto&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, button, cite, code,
@@ -14,7 +15,6 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-family: inherit;
   font-size: 100%;
   font-weight: inherit;
   font-style: inherit;
@@ -24,8 +24,8 @@ time, mark, audio, video {
 
 body {
   color: #666666;
-  font-family: "Rubik", Arial, sans-serif;
-  font-size: 14px;
+  font-family: 'Lato', 'Open Sans', 'Roboto', sans-serif;
+  font-size: 16px;
   line-height: 1; }
 
 ol, ul {
@@ -1666,3 +1666,128 @@ input[type="search"]::-webkit-search-results-decoration {
         margin-bottom: 0; }
       .ui-modal .ui-modal-body .ui-modal-content {
         padding: 20px 30px; } }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  margin: 0 0 20px 0;
+  line-height: 1.2; }
+
+h1, .ui-h1 {
+  font-size: 38px; }
+
+h2, .ui-h2 {
+  font-size: 30px; }
+
+h3, .ui-h3 {
+  font-size: 26px; }
+
+h4, .ui-h4 {
+  font-size: 24px; }
+
+h5, .ui-h5 {
+  font-size: 22px; }
+
+h6, .ui-h6 {
+  font-size: 20px; }
+
+.ui-heading-line {
+  overflow: hidden; }
+  .ui-heading-line * {
+    position: relative;
+    display: inline-block; }
+
+.ui-heading-line > ::before {
+  right: 100%;
+  margin-right: calc(5px + 0.3em); }
+
+.ui-heading-line > ::after {
+  left: 100%;
+  margin-left: calc(5px + 0.3em); }
+
+.ui-heading-line > ::before, .ui-heading-line > ::after {
+  content: "";
+  position: absolute;
+  top: calc(50% - (calc(0.2px + 0.05em) / 2));
+  width: 2000px;
+  border-bottom: calc(0.2px + 0.05em) solid #e5e5e5; }
+
+.ui-heading-bullet {
+  border-left: 5px solid #e5e5e5;
+  padding-left: 5px; }
+
+.ui-heading-divider {
+  padding-bottom: 10px;
+  border-bottom: 2.5px solid #e5e5e5; }
+
+.ui-input {
+  position: relative;
+  width: 180px; }
+  .ui-input .ui-input-box {
+    height: 40px;
+    padding-left: 6px;
+    padding-right: 6px;
+    background: transparent;
+    border: 1px solid #e5e5e5;
+    box-sizing: border-box;
+    margin: 0;
+    border-radius: 0;
+    font: inherit;
+    overflow: visible;
+    width: 100%;
+    -webkit-appearance: none;
+    vertical-align: middle;
+    color: #666;
+    outline: none; }
+    .ui-input .ui-input-box.-whit-icon {
+      padding-left: 45px; }
+  .ui-input .ui-input-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding-right: 10px;
+    display: inline-flex;
+    justify-content: right;
+    align-items: center;
+    color: #999;
+    text-decoration: none;
+    font-size: 20px;
+    padding-left: 10px; }
+
+.ui-checkbox-box {
+  border-radius: 25%;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  display: inline-block;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  margin-top: -2px;
+  margin-left: 5px; }
+
+.ui-radio-box {
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  overflow: hidden;
+  margin-top: -2px;
+  vertical-align: middle;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  border: 1px solid #ccc;
+  transition: .2s ease-in-out;
+  transition-property: background-color,border;
+  border-radius: 50%; }
+
+.ui-radio-box:checked {
+  outline: none;
+  border: 5px solid #1e87f0; }
+
+.ui-input-box:focus {
+  outline: none;
+  background-color: #fff;
+  color: #666;
+  border-color: #1e87f0; }
