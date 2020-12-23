@@ -1,5 +1,20 @@
 # Changelog
 
+## v0.5.0 (December 23, 2020)
+
+### New
+
+- Inputs
+- Checkbox
+- Radio
+- Headings
+- Typography
+   
+
+### Fix
+
+- Fix reset file styles.
+
 ## v0.4.1 (December 11, 2020)
 
 ### Fix
