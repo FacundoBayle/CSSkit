@@ -1,5 +1,13 @@
 # Changelog
 
+## v1.0.0 (January 15, 2021)
+
+### New
+
+- Pagination
+- Breadcrumb
+- Positioning class (right, left)
+
 ## v0.5.0 (December 23, 2020)
 
 ### New
