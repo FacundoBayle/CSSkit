@@ -1,0 +1,41 @@
+.ui-breadcrumb {
+  color: $bluejeans-light;
+
+  li {
+    font-size: 14px;
+    display: inline-block;
+
+    a {
+      text-decoration: none;
+      color: $bluejeans-light;
+      cursor: pointer;
+
+      &:hover {
+        color: $bluejeans-dark;
+      }
+    }
+
+    &:nth-child(n+2) {
+      &:before {
+        content: ">";
+        display: inline-block;
+        margin: 0 10px;
+        font-size: 14px;
+        color: #999;
+      }
+    }
+  }
+
+  .ui-disabled {
+    color: $darkgray;
+
+    a {
+      cursor: default;
+      color: $darkgray;
+
+      &:hover {
+        color: $darkgray;
+      }
+    }
+  }
+}

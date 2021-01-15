@@ -1,0 +1,24 @@
+.ui-pagination {
+
+  li {
+    display: inline-block;
+
+    a {
+      text-decoration: none;
+      color: $darkgray-light;
+      padding: 5px 10px;
+      cursor: pointer;
+
+      &:hover {
+        color: $darkgray-dark;
+      }
+    }
+  }
+
+  .ui-active {
+    span {
+      color: $darkgray-dark;
+      padding: 5px 10px;
+    }
+  }
+}
