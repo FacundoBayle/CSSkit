@@ -1,5 +1,16 @@
 # Changelog
 
+## v1.1.0 (January 27, 2021)
+
+### New
+
+- Icons
+- Tooltips
+
+### Update
+
+- Pagination
+
 ## v1.0.0 (January 15, 2021)
 
 ### New
