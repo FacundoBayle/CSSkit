@@ -2,11 +2,11 @@
 
   li {
     display: inline-block;
+    padding: 5px 15px;
 
     a {
       text-decoration: none;
       color: $darkgray-light;
-      padding: 5px 10px;
       cursor: pointer;
 
       &:hover {
@@ -18,7 +18,20 @@
   .ui-active {
     span {
       color: $darkgray-dark;
-      padding: 5px 10px;
+      border-bottom: 2px solid $darkgray-dark;
+    }
+  }
+
+  .ui-disabled {
+    color: $darkgray;
+
+    a {
+      cursor: default;
+      color: $darkgray;
+
+      &:hover {
+        color: $darkgray;
+      }
     }
   }
 }
