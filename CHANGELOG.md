@@ -1,5 +1,17 @@
 # Changelog
 
+## v1.2.0 (February 1, 2021)
+
+### New
+
+- Tooltips:
+    - Positions
+    - Close button
+
+### Update
+
+- Dropdown
+
 ## v1.1.0 (January 27, 2021)
 
 ### New
