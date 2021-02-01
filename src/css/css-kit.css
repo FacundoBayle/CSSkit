@@ -1610,23 +1610,37 @@ table {
 .ui-icon-linkedin2:before {
   content: "\eaca"; }
 
-.ui-dropdown .ui-dropdown-list {
-  background-color: #434a54;
-  padding: 5px 0;
-  text-align: left;
-  border: none;
-  margin: 2px 0 0;
-  border-radius: 4px; }
-  .ui-dropdown .ui-dropdown-list .ui-dropdown-item {
-    padding: 8px 20px; }
-    .ui-dropdown .ui-dropdown-list .ui-dropdown-item .ui-dropdown-link {
-      text-decoration: none;
-      color: white; }
-  .ui-dropdown .ui-dropdown-list .ui-dropdown-divider {
-    height: 1px;
-    margin: 9px 0;
-    overflow: hidden;
-    background-color: #656D78; }
+.ui-dropdown {
+  position: relative;
+  white-space: normal;
+  cursor: pointer; }
+  .ui-dropdown .ui-dropdown-list {
+    background-color: #434a54;
+    padding: 5px 0;
+    position: absolute;
+    text-align: left;
+    border: none;
+    margin: 2px 0 0;
+    top: 30px;
+    border-radius: 4px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .15s ease-out,transform .15s ease-out,visibility .15s ease-out; }
+    .ui-dropdown .ui-dropdown-list .ui-dropdown-item {
+      padding: 8px 20px; }
+      .ui-dropdown .ui-dropdown-list .ui-dropdown-item .ui-dropdown-link {
+        text-decoration: none;
+        color: white; }
+        .ui-dropdown .ui-dropdown-list .ui-dropdown-item .ui-dropdown-link:hover {
+          color: #aaadb0; }
+    .ui-dropdown .ui-dropdown-list .ui-dropdown-divider {
+      height: 1px;
+      margin: 9px 0;
+      overflow: hidden;
+      background-color: #656D78; }
+  .ui-dropdown:hover .ui-dropdown-list, .ui-dropdown.-show-dropdown .ui-dropdown-list {
+    visibility: visible;
+    opacity: 1; }
 
 .ui-alert {
   position: relative;
@@ -1943,6 +1957,12 @@ h6, .ui-h6 {
     cursor: auto;
     z-index: 1;
     color: white; }
+    .ui-tooltip .tooltip-container .tooltip-content .tooltip-content-title {
+      display: inline-block; }
+    .ui-tooltip .tooltip-container .tooltip-content .tooltip-close {
+      margin-top: 5px;
+      cursor: pointer;
+      float: right; }
   .ui-tooltip.-top .tooltip-container {
     position: absolute;
     left: 50%;
@@ -1969,6 +1989,43 @@ h6, .ui-h6 {
     visibility: hidden;
     opacity: 0;
     top: calc(100% + 10px); }
+  .ui-tooltip.-right .tooltip-container {
+    position: absolute;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-weight: 400;
+    transform: translate(-5px, -50%);
+    transform-origin: 50% 110%;
+    transition: opacity .15s ease-out,transform .15s ease-out,visibility .15s ease-out;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    left: 20px;
+    margin-left: 100%;
+    top: 50%;
+    align-items: center;
+    justify-content: center; }
+  .ui-tooltip.-right:hover .tooltip-container, .ui-tooltip.-right.-show-tooltip .tooltip-container {
+    transform: translate(0, -50%); }
+  .ui-tooltip.-left .tooltip-container {
+    position: absolute;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-weight: 400;
+    transform: translate(-5px, -50%);
+    transform-origin: 50% 110%;
+    transition: opacity .15s ease-out,transform .15s ease-out,visibility .15s ease-out;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    left: auto;
+    right: 0;
+    top: 50%;
+    align-items: center;
+    justify-content: center;
+    margin-right: calc(100% + 20px); }
+  .ui-tooltip.-left:hover .tooltip-container, .ui-tooltip.-left.-show-tooltip .tooltip-container {
+    transform: translate(0, -50%); }
   .ui-tooltip:hover .tooltip-container, .ui-tooltip.-show-tooltip .tooltip-container {
     transform: translateY(0);
     visibility: visible;
